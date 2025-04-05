@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+<body>
+    <div><div class="logo">
+        <img src="browser.png" alt="">
+         <h1 id="Main_heading">Welcome to my Blog</h1>
+    </div>
+        <nav class="nav_bar">
+            <ul class="nav_links">
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="Post.html">Posts</a></li>
+                <li><a href="AboutAuther.html">About Auther</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav> <hr>
+        <div class="breadcrumppart">
+            <div class="slideshow_conatiner">
+                    <img src="image1.jpg" alt="image1" class="images_slide">
+                    <img src="image2.jpg" alt="image2" class="images_slide">
+                    <img src="image3.jpg" alt="image3" class="images_slide">
+                    <img src="image4.jpg" alt="image4" class="images_slide">
+            </div>
+        </div>
+    </div><br><br><br>
+    <div class="container-fluid auther">
+         <div class="row">
+            <div class="col-md-9">
+                <h2>About Auther</h2>
+                <p class="para">Uttam Kumar is a passionate learner with a background in Zoology and a growing interest in the world of web development and design. With a BSc, BEd, and a postgraduate degree in Zoology, Uttam has always been curious about how systems work—both in nature and in tech. He’s currently focused on front-end development, learning HTML, CSS, JavaScript, and exploring frameworks like Bootstrap. He’s also experimenting with design tools like Figma and has plans to dive into PHP for backend development.</p><br>
+                <p class="para">Outside of coding, Uttam enjoys peaceful moments at home, caring for his two rabbits and a dove. He finds joy in simplicity, creativity, and continuous learning. His inspirations include creators and educators like Saptarshi Prakash, King Sidharth, and the folks at Whiteboard.fm. This blog is a place where he documents his journey, shares what he learns, and connects with others who are walking a similar path.</p>
+            </div>
+            <div class="col-md-3">
+                <img src="auther.png" alt="profile photo"  class="img-fluid profile_photo">
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="AI-Pixabay.webp" class="card-img-top " alt="AI_IMAGE">
+                    <div class="card-body">
+                      <p class="card-text">DeepMind predicts arrival of Artificial General Intelligence by 2030, warns of an ‘existential crisis’ for humanity</p>
+                      <button class="btn btn-danger"><a href="Post.html">more</a></button>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="AI-Pixabay.webp" class="card-img-top" alt="AI_IMAGE">
+                    <div class="card-body">
+                      <p class="card-text">DeepMind predicts arrival of Artificial General Intelligence by 2030, warns of an ‘existential crisis’ for humanity</p>
+                      <button><a href="Post.html">more</a></button>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="AI-Pixabay.webp" class="card-img-top" alt="AI_IMAGE">
+                    <div class="card-body">
+                      <p class="card-text">DeepMind predicts arrival of Artificial General Intelligence by 2030, warns of an ‘existential crisis’ for humanity</p>
+                      <button><a href="Post.html">more</a></button>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    
+      <div class="card">
+        <img src="9ie33uns_buttermilk-benefits_625x300_03_July_24.webp" class="card-img-top" alt="buttermilk">
+        <div class="card-body">
+        <p class="card-text">How To Make The Perfect Glass Of Buttermilk (Chaas) - Pro Tips You Need To Know</p>
+        <button><a href="Post.html">read more</a></button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="1743759666921-tribal.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Govt to establish 440 more Eklavya Model Schools for tribal communities</p>
+          <button><a href="Post.html">read more</a></button>
+        </div>
+      </div>
+      <div class="feedback_form">
+
+      </div>
+      <div class="feedback">
+        <h4>We’d Love Your Feedback!</h4>
+        <p>Your thoughts matter to us. If you’ve enjoyed exploring this site or have ideas to improve it, please share your feedback. Whether it’s about design, content, or usability — every suggestion helps us grow better. Thank you!</p>
+        <h5>Feedback Form</h5>
+        Name :- <input type="text" placeholder="Name"><br>
+        Email Address:-<input type="email" name="email" placeholder="email address"><br>
+        <input type="submit" value="submit">
+    </div>
+        <div class="container">
+            <ul class="row">
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="Post.html">Posts</a></li>
+                <li><a href="AboutAuther.html">About Auther</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    <script>
+        let i=0;
+        function slide_left(i) {
+            change(i);
+        }
+        function slide_right(i) {
+            change(i);
+        }
+        var image_s_n = 0;
+        function change(j){
+            let images = document.getElementsByClassName('images_slide');
+            for ( i=0; i < images.length; i++){
+            images[i].style.display = "none";
+        }
+            image_s_n = image_s_n + j;
+            if (image_s_n >= images.length){
+                image_s_n =0;
+            }
+            if (image_s_n < 0){
+                image_s_n = images.length -1;
+            }
+            images[image_s_n].style.display = "block";
+        }
+        window.onload = function() {
+            document.getElementsByClassName('images_slide')[0].style.display ="block";
+        }
+    </script>
+</body>
+</html>
