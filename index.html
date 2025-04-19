@@ -3,133 +3,204 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <title>Document</title>
+    <title>Homepage</title>
 </head>
 <body>
-    <div><div class="logo">
-        <img src="browser.png" alt="">
-         <h1 id="Main_heading">Welcome to my Blog</h1>
-    </div>
-        <nav class="nav_bar">
-            <ul class="nav_links">
-                <li><a href="Index.html">Home</a></li>
-                <li><a href="Post.html">Posts</a></li>
-                <li><a href="AboutAuther.html">About Auther</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav> <hr>
-        <div class="breadcrumppart">
-            <div class="slideshow_conatiner">
-                    <img src="image1.jpg" alt="image1" class="images_slide">
-                    <img src="image2.jpg" alt="image2" class="images_slide">
-                    <img src="image3.jpg" alt="image3" class="images_slide">
-                    <img src="image4.jpg" alt="image4" class="images_slide">
-            </div>
-        </div>
-    </div><br><br><br>
-    <div class="container-fluid auther">
-         <div class="row">
-            <div class="col-md-9">
-                <h2>About Auther</h2>
-                <p class="para">Uttam Kumar is a passionate learner with a background in Zoology and a growing interest in the world of web development and design. With a BSc, BEd, and a postgraduate degree in Zoology, Uttam has always been curious about how systems work—both in nature and in tech. He’s currently focused on front-end development, learning HTML, CSS, JavaScript, and exploring frameworks like Bootstrap. He’s also experimenting with design tools like Figma and has plans to dive into PHP for backend development.</p><br>
-                <p class="para">Outside of coding, Uttam enjoys peaceful moments at home, caring for his two rabbits and a dove. He finds joy in simplicity, creativity, and continuous learning. His inspirations include creators and educators like Saptarshi Prakash, King Sidharth, and the folks at Whiteboard.fm. This blog is a place where he documents his journey, shares what he learns, and connects with others who are walking a similar path.</p>
-            </div>
-            <div class="col-md-3">
-                <img src="auther.png" alt="profile photo"  class="img-fluid profile_photo">
+    <div class="menu_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="logo">
+                        <img src="images/browser.jpg" alt="image_logo">
+                    </div>
+                </div>
+                <div class="col-md-9 my_menu">
+                    <nav class="nav_bar">
+                        <ul class="nav_links">
+                            <li><a href="Index.html" class="nav_linkunderline">Home</a></li>
+                            <li><a href="Post.html">Posts</a></li>
+                            <li><a href="AboutAuthor.html">About Auther</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
     </div>
+    <div class="container-fluid hero_section">
+        <img src="images/image1.jpg" alt="image1" class="images_slide">
+        <img src="images/image2.jpg" alt="image2" class="images_slide">
+        <img src="images/image3.jpg" alt="image3" class="images_slide">
+        <img src="images/image4.jpg" alt="image4" class="images_slide">
     </div>
+    <!-- auther bio and photo  -->
+    <div class="author_container">
+        <div class="container ">
+             <div class="row">
+                <div class="col-md-7 ps-5">
+                    <h2 class="mt-5">About Author</h2>
+                    <hr>
+                    <p class="para">Uttam Kumar is a passionate learner with a background in Zoology and a growing interest in the world of web development and design. With a BSc, BEd, and a postgraduate degree in Zoology, Uttam has always been curious about how systems work—both in nature and in tech. He’s currently focused on front-end development, learning HTML, CSS, JavaScript, and exploring frameworks like Bootstrap. He’s also experimenting with design tools like Figma and has plans to dive into PHP for backend development.</p>
+                    <p class="para">Beyond coding, Uttam embraces a calm and creative lifestyle. He finds peace in everyday moments and enjoys spending time reflecting, exploring ideas, and learning new things. Whether it’s experimenting with design, diving into code, or sharing his thoughts, he values growth, simplicity, and meaningful connections. Through this blog, he hopes to document his journey, inspire others, and connect with like-minded learners.
+                    </p>
+                </div>
+                <div class="col-md-5 profile_photo">
+                    <img src="images/auther.png" alt="profile photo"  class="img-fluid ">
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- short post section  -->
+ <div class="blg_main_div">
+     <div class="container">
+         <h3>Trending topics</h3>
+         <!-- first photo section -->
+         <div class="row mt-5">
+             <div class="col-md-4 mb-3">
+                 <div class="card custom_card">
+                     <img src="images/it.jpg" class="card-img-top " alt="AI_IMAGE">
+                     <div class="card-body">
+                         <p class="card-text">Amazon, Google, Meta, Microsoft, Apple and other tech giants ‘travel advisory’ to Indian H-1B holders amid Donald Trump’s strict visa rules: Avoid …</p>
+                         <button class="btn btn-success post_btn"><a href="Post.html" class="text-white text-decoration-none">more</a></button>
+                     </div>
+                   </div>
+             </div>
+             <!-- second photo section -->
+             <div class="col-md-4 mb-3">
+                 <div class="card custom_card">
+                     <img src="images/9ie33uns_buttermilk-benefits_625x300_03_July_24.webp" class="card-img-top" alt="AI_IMAGE"/>
+                     <div class="card-body">
+                       <p class="card-text"> Buttermilk is not just a tasty post-meal drink — it’s packed with digestive, cooling, and nutritional benefits that are deeply rooted in Ayurvedic and modern science. Here's a well-written list...</p>
+                       <button class="btn btn-success post_btn"><a href="Post.html" class="text-white text-decoration-none">more</a></button>
+                     </div>
+                   </div>
+             </div>
+             <!-- third photo section -->
+             <div class="col-md-4 mb-3">
+                 <div class="card custom_card">
+                     <img src="images/bill-gates.avif" class="card-img-top" alt="AI_IMAGE"/>
+                     <div class="card-body">
+                         <p class="card-text">DeepMind predicts Artificial General Intelligence (AGI) could emerge by 2030, calling it a potential turning point in human history. It warns AGI may cause an existential crisis...</p>
+                         <button class="btn btn-success post_btn"><a href="Post.html" class="text-white text-decoration-none">more</a></button>
+                     </div>
+                 </div>
+             </div>
+     <!-- forth photo section -->
+             <div class="col-md-4 mb-3">
+                 <div class="card custom_card">
+                     <img src="images/IMG_6963.JPG" class="card-img-top " alt="AI_IMAGE">
+                     <div class="card-body">
+                       <p class="card-text">"The Timeless Elegance of Raja Rani Temple shines through its ancient architecture, intricate carvings, and spiritual grace, representing Odisha’s rich cultural..."</p>
+                       <button class="btn btn-success post_btn"><a href="Post.html" class="text-white text-decoration-none">more</a></button>
+                     </div>
+                 </div>
+             </div>
+             <!-- fifth photo section -->
+             <div class="col-md-4 mb-3">
+                 <div class="card custom_card">
+                     <img src="images/1.avif" class="card-img-top" alt="AI_IMAGE">
+                     <div class="card-body">
+                       <p class="card-text">Recent reports indicate a significant that all the people with all age shift in India's IT job market, with a 20% growth projected in 2025. Remote work options are ...</p>
+                       <button class="btn btn-success post_btn"><a href="Post.html" class="text-white text-decoration-none">more</a></button>
+                     </div>
+                   </div>
+             </div>
+             <!-- sixth photo section -->
+             <div class="col-md-4 mb-3">
+                 <div class="card custom_card">
+                     <img src="images/AI-Pixabay.webp" class="card-img-top" alt="AI_IMAGE">
+                     <div class="card-body">
+                       <p class="card-text">DeepMind predicts arrival of Artificial General Intelligence by 2030, the AI is all that that makes the world of the  warns of an ‘existential crisis’ for humanity</p>
+                       <button class="btn btn-success post_btn"><a href="Post.html" class="text-white text-decoration-none">more</a></button>
+                     </div>
+                   </div>
+             </div>
+         </div>
+     </div>
+ </div>
+    <div class="fb_main_div">
+        <div class="container text-center">
+            <h3 class="fw-bolder mb-2">We’d Love Your Feedback!</h3>
+            <p class="feedback_text">
+                Your thoughts matter to us. If you’ve enjoyed exploring this site or have ideas to improve it, please share your feedback. Whether it’s about design, content, or usability — every suggestion helps us grow better. Thank you!
+            </p>
+            <h4 class="fw-bolder  mb-2">Feedback Form</h4>
+            <form class="fb_form">
+                <div class="mb-3">
+                  <label for="fb_user_name" class="form-label">Your Name</label>
+                  <input type="text" class="form-control" id="fb_user_name" name="fb_user_name" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="fb_user_email" class="form-label">Your Email</label>
+                  <input type="text" class="form-control" id="fb_user_email" name="fb_user_email" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="user_msg" class="form-label">Your Message</label>
+                  <textarea class="form-control" id="user_msg" name="user_msg" ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </div>
+<!-- footer section -->
+    <!-- Footer -->
+<footer class="bg-success text-white pt-5">
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="AI-Pixabay.webp" class="card-img-top " alt="AI_IMAGE">
-                    <div class="card-body">
-                      <p class="card-text">DeepMind predicts arrival of Artificial General Intelligence by 2030, warns of an ‘existential crisis’ for humanity</p>
-                      <button class="btn btn-danger"><a href="Post.html">more</a></button>
+            <div class="col-md-6">
+                <h5>Enter your email to send a message</h5>
+                <form>
+                    <input type="email" class="form-control input_field" placeholder="Enter your email">
+                    <div class="submit_btn_container">
+                        <button class="btn btn-dark submit_btn" type="submit">Submit</button>
                     </div>
-                  </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="AI-Pixabay.webp" class="card-img-top" alt="AI_IMAGE">
-                    <div class="card-body">
-                      <p class="card-text">DeepMind predicts arrival of Artificial General Intelligence by 2030, warns of an ‘existential crisis’ for humanity</p>
-                      <button><a href="Post.html">more</a></button>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="AI-Pixabay.webp" class="card-img-top" alt="AI_IMAGE">
-                    <div class="card-body">
-                      <p class="card-text">DeepMind predicts arrival of Artificial General Intelligence by 2030, warns of an ‘existential crisis’ for humanity</p>
-                      <button><a href="Post.html">more</a></button>
-                    </div>
-                  </div>
-            </div>
+                </form>
+             </div>
+            <div class="col-md-3 mb-4">
+                <h6 class="text-uppercase  right_ftr fw-bold">Topics</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white text-decoration-none">Tech News</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Travel</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Food & Recipes</a></li>
+                </ul>
+            </div >
+            <div class="col-md-3  mx-auto ">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                <p>Damana shree vihar, India</p>
+                <p> kumar123@gmail.com</p>
+                <p>+91 9665453246</p>
+                <p> +91 9667564536</p>
+              </div>
         </div>
     </div>
-    
-      <div class="card">
-        <img src="9ie33uns_buttermilk-benefits_625x300_03_July_24.webp" class="card-img-top" alt="buttermilk">
-        <div class="card-body">
-        <p class="card-text">How To Make The Perfect Glass Of Buttermilk (Chaas) - Pro Tips You Need To Know</p>
-        <button><a href="Post.html">read more</a></button>
-        </div>
-      </div>
-      <div class="card">
-        <img src="1743759666921-tribal.webp" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Govt to establish 440 more Eklavya Model Schools for tribal communities</p>
-          <button><a href="Post.html">read more</a></button>
-        </div>
-      </div>
-      <div class="feedback_form">
-
-      </div>
-      <div class="feedback">
-        <h4>We’d Love Your Feedback!</h4>
-        <p>Your thoughts matter to us. If you’ve enjoyed exploring this site or have ideas to improve it, please share your feedback. Whether it’s about design, content, or usability — every suggestion helps us grow better. Thank you!</p>
-        <h5>Feedback Form</h5>
-        Name :- <input type="text" placeholder="Name"><br>
-        Email Address:-<input type="email" name="email" placeholder="email address"><br>
-        <input type="submit" value="submit">
+</div>
+      <!-- Bottom Section -->
+    <div class="text-center mt-4">
+        <p class="mb-0">&copy; 2025 Uttamsblog.com. All Rights Reserved.</p>
+        <small>
+            <a href="#" class="text-white text-decoration-none me-2">Terms</a> |
+            <a href="#" class="text-white text-decoration-none me-2">Privacy</a> |
+            <a href="#" class="text-white text-decoration-none">Accessibility</a>
+        </small>
     </div>
-        <div class="container">
-            <ul class="row">
-                <li><a href="Index.html">Home</a></li>
-                <li><a href="Post.html">Posts</a></li>
-                <li><a href="AboutAuther.html">About Auther</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </div>
+</footer>
     <script>
-        let i=0;
-        function slide_left(i) {
-            change(i);
-        }
-        function slide_right(i) {
-            change(i);
-        }
+        setInterval(change, 3000);
         var image_s_n = 0;
-        function change(j){
+        function change(){
+            let i=0;
             let images = document.getElementsByClassName('images_slide');
             for ( i=0; i < images.length; i++){
-            images[i].style.display = "none";
-        }
-            image_s_n = image_s_n + j;
-            if (image_s_n >= images.length){
-                image_s_n =0;
+                images[i].style.display = "none";
             }
-            if (image_s_n < 0){
-                image_s_n = images.length -1;
+            if (image_s_n >= images.length){
+                image_s_n = 0;
             }
             images[image_s_n].style.display = "block";
+            image_s_n++;
         }
         window.onload = function() {
             document.getElementsByClassName('images_slide')[0].style.display ="block";
@@ -137,3 +208,4 @@
     </script>
 </body>
 </html>
+
